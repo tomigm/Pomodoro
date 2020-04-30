@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pomodoro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <h1>pomodoro</h1>
+  <div class = 'container'>
+    <div class="screen">
+        <div class = 'status' id = 'status'>WORK TIME</div>
+        <div class = 'display' id='bottomDisplay'> 25:00 </div>
+    </div>
+    <div id='work and rest time container' class= 'work-rest-container'>
+    <div class='work-rest'>work time</div> <div class='work-rest'>rest time</div>
+    </div>
+
+    <div class = 'settings'>
+      
+      <div class = 'work'>
+        <button id = 'workPlus' class="fa fa-plus-circle "></button><div id = 'displayWork' style='margin-right: 6px;'>25:00</div><button id = 'workMinus' class="fa fa-minus-circle"></button>
+      </div>
+      <div class = 'rest'>
+        <button id = 'restPlus' class="fa fa-plus-circle "></button><div id = 'displayRest' style='margin-right: -7px;'>5:00</div><button id = 'restMinus' class="fa fa-minus-circle "></button>
+      </div>
+
+    </div>  
+  
+    
+    <div class = 'operators'>
+      <button id = 'play' class="fa fa-play fa-2x"></button>
+      <button id = 'pause' class="fa fa-pause fa-2x"></button>
+      <button id = 'stop'class="fa fa-stop fa-2x"></button>
+      <button id = 'restart' class="fa fa-repeat fa-2x" ></button>
+    </div>
+  </div>
+
+
+  </div>
+<div id='counter'> </div>
+<script type="text/javascript" src='script.js'></script>
+</body>
+</html>
+

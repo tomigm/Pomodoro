@@ -1,0 +1,182 @@
+* {
+    outline: none;
+}
+
+h1 {
+    margin: auto;
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: tomato;
+
+}
+
+.container {
+    padding-top: 10px;
+    margin: auto;
+    width: 50%
+   
+    
+}
+
+.status {
+    color:tomato;
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+.display {
+    font-size: 60px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(26, 26, 26);
+}
+
+.settings {
+    display: flex;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#displayWork, #displayRest {
+    font-size: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(26, 26, 26);
+}
+
+.work, .rest {
+align-items: center;
+flex: 1;
+display: flex;
+font-family: 'Press Start 2P', cursive;
+color: rgb(26, 26, 26);
+}
+
+
+button {
+flex: 1;
+border: none;
+background: none;
+color: rgb(58, 58, 58);
+
+}
+
+
+
+.operators {
+    margin-top: 58px;
+    display: flex;
+    flex: 1;
+}
+
+.operators>button  {
+    flex: 1
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.display, .status {
+    flex : 1;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+}
+.fa-plus-circle, .fa-minus-circle{
+    color:rgb(165, 165, 165)
+    
+}
+
+.fa-minus-circle:hover {
+    color: tomato;
+}
+.fa-plus-circle:hover {
+    color: rgb(93, 167, 85);
+}
+/*.fa-plus-circle{
+    color:green;
+    
+}*/
+.fa-plus-circle:hover, .fa-minus-circle:hover{
+    transform: scale(1.15)
+}
+
+.fa-stop:hover, .fa-play:hover, .fa-pause:hover{
+    color: tomato;
+}
+.fa-repeat:hover {
+    animation: fa-spin 2s infinite linear;
+    color: tomato;
+}
+
+.work-rest-container{
+    font-family: teko;
+    margin-left: -2px;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 58px;
+}
+
+.work-rest {
+    justify-content: space-around;
+    display: flex;
+}
+
+@media only screen and (max-width: 650px) {
+    .container {
+        width: 100%;
+    }
+
+    .screen {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .status .display {
+        flex: 1;
+    }
+
+    .work-rest-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        top: 50px;
+        z-index: 900;
+    }
+    .work-rest {
+        position: relative;
+    }
+    .settings {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .work-rest-container > *:first-child {
+        bottom: 20px;
+      }
+    .work-rest-container > *:last-child {
+        top: 20px;
+      }
+
+    .operators {
+        margin-top: 50px;
+    }
+    .work {
+        margin-right: 12px;
+        margin-left: 12px;
+    }
+    .work, .rest {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        z-index: 950;
+    }
+}
