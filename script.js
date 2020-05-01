@@ -10,11 +10,13 @@ let stop_switch = 'on';
 function decreaseSeconds(work_time){
     stop_switch = 'off'
    countdown = setInterval(function(){
+        
         seconds = work_time%60;
         minutes = parseInt(work_time/60);
         if(work_time <=0){
             clearInterval(countdown);
             restingSeconds(rest_time);
+            document.getElementById('Bell').play();
             return;
         }
         work_time -= 1;
@@ -34,7 +36,7 @@ function restingSeconds(rest_time){
         if(rest_time <=0){
             clearInterval(countdown2);
             decreaseSeconds(work_time);
-            
+            document.getElementById('BellRest').play();
             return;
 
         }
