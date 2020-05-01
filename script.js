@@ -148,6 +148,7 @@ button.addEventListener('click', () => {
 
     else if(button.id = 'stop'){
         if(stop_switch=='on'){ return }
+        if(play_switch=='on'){ return }
         else{
         
         work_time = work_time/60;
